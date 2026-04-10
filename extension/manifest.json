@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "BDE AI Copilot",
+  "description": "Real-time AI side panel assistant for Business Development calls.",
+  "version": "1.0.0",
+  "permissions": ["storage", "activeTab", "scripting", "sidePanel"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "Open BDE AI Copilot"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}

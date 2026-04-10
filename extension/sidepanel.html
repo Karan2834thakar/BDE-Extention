@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BDE AI Copilot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>BDE AI Copilot</h1>
+        <p class="subtitle">Live AI support during client calls</p>
+      </header>
+
+      <section class="controls">
+        <button id="startBtn" type="button">Start Listening</button>
+        <button id="stopBtn" type="button" disabled>Stop Listening</button>
+      </section>
+
+      <section class="panel">
+        <h2>Live Transcript</h2>
+        <div id="transcriptBox" class="box" aria-live="polite"></div>
+      </section>
+
+      <section class="panel">
+        <h2>AI Suggestion</h2>
+        <div id="answerBox" class="box answer" aria-live="polite">
+          AI suggestion will appear here.
+        </div>
+      </section>
+    </main>
+
+    <script src="sidepanel.js"></script>
+  </body>
+</html>
